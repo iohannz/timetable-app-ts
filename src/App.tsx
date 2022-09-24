@@ -1,17 +1,19 @@
 import './App.css';
-import BottomNav from './components/BottomNav';
-import UpperNav from './components/UpperNav';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Main from './pages/Main';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Main />}></Route>
-      </Routes>
-    </Router>
+    <div className="flex justify-center min-h-screen">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Main />}></Route>
+          <Route path="*" element={<NotFound />}></Route>
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
