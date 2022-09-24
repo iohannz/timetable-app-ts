@@ -6,12 +6,11 @@ import UpperNav from '../components/UpperNav';
 
 const Main = () => {
   return (
-    <>
+    <div className="w-full max-w-3xl">
       <UpperNav />
-      <DateCarousel />
       <Schedule />
       <BottomNav />
-    </>
+    </div>
   );
 };
 

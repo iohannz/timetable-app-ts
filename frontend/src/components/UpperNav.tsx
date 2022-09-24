@@ -1,22 +1,16 @@
 import React from 'react';
+import CalendarComp from './CalendarComp';
+import DateCarousel from './DateCarousel';
 
 const UpperNav = () => {
   return (
-    <div className="navbar fixed bg-base-100 justify-center">
-      <div className="dropdown dropdown-hover ">
-        <label tabIndex={0} className="btn btn-ghost normal-case text-xl">
-          <h3>11-206</h3>
-        </label>
-        <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-          <li>
-            <a>Item 1</a>
-          </li>
-          <li>
-            <a>Item 2</a>
-          </li>
-        </ul>
+    <div className="navbar flex flex-1 flex-wrap bg-base-100 justify-between items-center">
+      <div className="flex flex-wrap max-w-[200px]">
+        <h3 className=" text-xl mr-2">11-206</h3>
+        <p>21 September, even</p>
       </div>
-      <p>21 September, even</p>
+      <CalendarComp />
+      {/* <DateCarousel /> */}
     </div>
   );
 };

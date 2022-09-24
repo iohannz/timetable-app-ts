@@ -5,27 +5,19 @@ import { Link } from 'react-router-dom';
 
 const BottomNav = () => {
   return (
-    <div>
-      <div className="btm-nav btm-nav-xl">
-        <Link to="/">
-          <button>
-            <AiOutlineSchedule />
-            <span className="btm-nav-label">Schedule</span>
-          </button>
-        </Link>
-        <Link to="/reminders">
-          <button>
-            <AiOutlineClockCircle />
-            <span className="btm-nav-label">Reminders</span>
-          </button>
-        </Link>
-        <Link to="/settings">
-          <button>
-            <FiSettings />
-            <span className="btm-nav-label">Settings</span>
-          </button>
-        </Link>
-      </div>
+    <div className=" btm-nav btm-nav-xl left-1/2 max-w-3xl w-full translate-x-[-50%]">
+      <Link to="/">
+        <AiOutlineSchedule />
+        <span className="btm-nav-label">Schedule</span>
+      </Link>
+      <Link to="/reminders">
+        <AiOutlineClockCircle />
+        <span className="btm-nav-label">Reminders</span>
+      </Link>
+      <Link to="/settings">
+        <FiSettings />
+        <span className="btm-nav-label">Settings</span>
+      </Link>
     </div>
   );
 };
